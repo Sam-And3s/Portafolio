@@ -6,3 +6,4 @@ export default defineConfig({
   base: '/Portafolio/',
   plugins: [react(), tailwindcss()],
 });
+
