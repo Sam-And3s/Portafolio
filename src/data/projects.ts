@@ -12,7 +12,6 @@ export const projects: Project[] = [
     ],
     stack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
     githubUrl: 'https://github.com/tu-usuario/learning-insights',
-    demoUrl: 'https://tu-usuario.github.io/learning-insights/',
     content: {
       es: {
         title: 'Learning Insights',
@@ -49,7 +48,6 @@ export const projects: Project[] = [
     ],
     stack: ['React', 'Tailwind CSS', 'Spring Boot', 'Oracle PL/SQL'],
     githubUrl: 'https://github.com/tu-usuario/course-flow',
-    demoUrl: 'https://tu-usuario.github.io/course-flow/',
     content: {
       es: {
         title: 'Course Flow',
@@ -86,7 +84,6 @@ export const projects: Project[] = [
     ],
     stack: ['TypeScript', 'Node.js', 'MongoDB', 'Oracle PL/SQL'],
     githubUrl: 'https://github.com/tu-usuario/data-studio',
-    demoUrl: 'https://tu-usuario.github.io/data-studio/',
     content: {
       es: {
         title: 'Data Studio',

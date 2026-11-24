@@ -8,7 +8,6 @@ export interface Project {
   screenshots: string[];
   stack: string[];
   githubUrl: string;
-  demoUrl: string;
   content: {
     es: {
       title: string;

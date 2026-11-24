@@ -12,7 +12,6 @@ interface ProjectsProps {
     description: string;
     viewDetails: string;
     github: string;
-    demo: string;
     challenge: string;
     solution: string;
     technicalDetails: string;
@@ -124,15 +123,6 @@ export default function Projects({ language, content }: ProjectsProps) {
                     >
                       {content.github}
                     </a>
-                    <a
-                      aria-label={`${content.demo}: ${copy.title}`}
-                      className="text-xs font-medium text-muted transition hover:text-ink"
-                      href={project.demoUrl}
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      {content.demo} ↗
-                    </a>
                   </div>
                 </div>
                 <span className="sr-only">
@@ -231,14 +221,6 @@ export default function Projects({ language, content }: ProjectsProps) {
                 target="_blank"
               >
                 {content.github} ↗
-              </a>
-              <a
-                className="button button-light !px-4 !py-2.5"
-                href={selectedProject.demoUrl}
-                rel="noreferrer"
-                target="_blank"
-              >
-                {content.demo} ↗
               </a>
             </div>
           </div>
