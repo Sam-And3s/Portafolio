@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" fill="none">
+  <rect width="960" height="600" fill="#E9EDE8"/>
+  <rect x="57" y="46" width="846" height="508" rx="18" fill="#FBFCFA"/>
+  <rect x="57" y="46" width="184" height="508" rx="18" fill="#18231E"/>
+  <path d="M75 64h148v472H75z" fill="#18231E"/>
+  <circle cx="100" cy="87" r="13" fill="#D75C43"/>
+  <rect x="123" y="80" width="74" height="8" rx="4" fill="#F5F6F4"/>
+  <rect x="93" y="131" width="115" height="30" rx="8" fill="#2C3932"/>
+  <rect x="105" y="143" width="57" height="6" rx="3" fill="#F5F6F4"/>
+  <rect x="105" y="183" width="78" height="6" rx="3" fill="#839087"/>
+  <rect x="105" y="216" width="93" height="6" rx="3" fill="#839087"/>
+  <rect x="105" y="249" width="70" height="6" rx="3" fill="#839087"/>
+  <text x="278" y="100" fill="#18231E" font-family="Arial,sans-serif" font-size="24" font-weight="700">Learning overview</text>
+  <text x="278" y="127" fill="#738078" font-family="Arial,sans-serif" font-size="12">MONDAY, OCTOBER 21</text>
+  <rect x="278" y="156" width="180" height="102" rx="12" fill="#F1F4F0"/>
+  <rect x="301" y="177" width="94" height="8" rx="4" fill="#87938A"/>
+  <text x="301" y="225" fill="#18231E" font-family="Arial,sans-serif" font-size="30" font-weight="700">2,480</text>
+  <text x="301" y="244" fill="#628C71" font-family="Arial,sans-serif" font-size="12">↑ 12.8% this month</text>
+  <rect x="475" y="156" width="180" height="102" rx="12" fill="#F1F4F0"/>
+  <rect x="498" y="177" width="94" height="8" rx="4" fill="#87938A"/>
+  <text x="498" y="225" fill="#18231E" font-family="Arial,sans-serif" font-size="30" font-weight="700">84.6%</text>
+  <text x="498" y="244" fill="#628C71" font-family="Arial,sans-serif" font-size="12">↑ 4.2% completion</text>
+  <rect x="672" y="156" width="202" height="102" rx="12" fill="#F1F4F0"/>
+  <rect x="695" y="177" width="104" height="8" rx="4" fill="#87938A"/>
+  <text x="695" y="225" fill="#18231E" font-family="Arial,sans-serif" font-size="30" font-weight="700">36.2h</text>
+  <text x="695" y="244" fill="#628C71" font-family="Arial,sans-serif" font-size="12">↑ 8.1% study time</text>
+  <rect x="278" y="280" width="596" height="238" rx="12" fill="#F7F8F6"/>
+  <text x="301" y="314" fill="#18231E" font-family="Arial,sans-serif" font-size="15" font-weight="700">Learner engagement</text>
+  <path d="M310 453c42-30 65-19 99-63s57 13 97-21 52-6 92-49 57 7 92-16 51 9 134-28" stroke="#D75C43" stroke-linecap="round" stroke-width="4"/>
+  <path d="M310 480h524M310 438h524M310 396h524M310 354h524" stroke="#E3E8E2" stroke-width="1"/>
+  <circle cx="598" cy="320" r="5" fill="#D75C43"/>
+</svg>

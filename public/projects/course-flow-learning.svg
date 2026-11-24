@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" fill="none">
+  <rect width="960" height="600" fill="#E9EDE8"/>
+  <rect x="57" y="46" width="846" height="508" rx="18" fill="#FBFCFA"/>
+  <rect x="57" y="46" width="184" height="508" rx="18" fill="#18231E"/>
+  <circle cx="100" cy="87" r="13" fill="#D75C42"/>
+  <rect x="123" y="80" width="74" height="8" rx="4" fill="#F5F6F4"/>
+  <rect x="93" y="215" width="115" height="30" rx="8" fill="#2C3932"/>
+  <rect x="105" y="227" width="67" height="6" rx="3" fill="#F5F6F4"/>
+  <rect x="105" y="144" width="76" height="6" rx="3" fill="#839087"/>
+  <rect x="105" y="177" width="94" height="6" rx="3" fill="#839087"/>
+  <rect x="105" y="261" width="68" height="6" rx="3" fill="#839087"/>
+  <text x="278" y="100" fill="#18231E" font-family="Arial,sans-serif" font-size="24" font-weight="700">Data modeling essentials</text>
+  <text x="278" y="127" fill="#738078" font-family="Arial,sans-serif" font-size="12">MODULE 04 · LESSON 02</text>
+  <rect x="278" y="155" width="596" height="268" rx="13" fill="#F1F4F0"/>
+  <rect x="301" y="177" width="550" height="169" rx="9" fill="#DAE4D9"/>
+  <path d="M530 220l50 33-50 33v-66zm42-23l87 57-87 58" stroke="#516C58" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+  <circle cx="576" cy="254" r="63" stroke="#F7F8F6" stroke-width="2"/>
+  <text x="301" y="379" fill="#18231E" font-family="Arial,sans-serif" font-size="17" font-weight="700">Build a schema that grows with your product</text>
+  <text x="301" y="403" fill="#738078" font-family="Arial,sans-serif" font-size="13">Learn how to model clear, dependable data structures.</text>
+  <rect x="278" y="446" width="596" height="69" rx="11" fill="#F7F8F6"/>
+  <circle cx="309" cy="480" r="16" fill="#DDE9DE"/>
+  <path d="M303 480l5 5 9-10" stroke="#54805E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  <rect x="338" y="467" width="208" height="8" rx="4" fill="#39483F"/>
+  <rect x="338" y="484" width="143" height="6" rx="3" fill="#A3ADA5"/>
+  <text x="781" y="485" fill="#547B5A" font-family="Arial,sans-serif" font-size="12" font-weight="700">COMPLETED</text>
+</svg>
