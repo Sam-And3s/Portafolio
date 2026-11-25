@@ -13,7 +13,6 @@ Run `npm run build` to generate the static site in `dist/`.
 
 ## Personalize before publishing
 
-- Update the name/mark in `src/components/Navbar.tsx`.
 - Replace the sample project copy and links in `src/data/projects.ts`.
 - Add real screenshots in `public/projects/`.
 - Set the email and social profiles in `src/config.ts`.

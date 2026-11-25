@@ -43,7 +43,7 @@ export default function Navbar({
           href="#home"
           onClick={() => setMenuOpen(false)}
         >
-          sam<span className="text-accent">.</span>
+          Skahnow<span className="text-accent">Tech</span>
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
@@ -63,11 +63,10 @@ export default function Navbar({
             {(['es', 'en'] as const).map((option) => (
               <button
                 aria-pressed={language === option}
-                className={`rounded-full px-2.5 py-1 text-[11px] font-bold transition-colors ${
-                  language === option
+                className={`rounded-full px-2.5 py-1 text-[11px] font-bold transition-colors ${language === option
                     ? 'bg-ink text-white'
                     : 'text-muted hover:text-ink'
-                }`}
+                  }`}
                 key={option}
                 onClick={() => onLanguageChange(option)}
                 type="button"
