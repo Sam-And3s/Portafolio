@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 interface ScreenshotCarouselProps {
   images: string[];
@@ -18,6 +18,46 @@ export default function ScreenshotCarousel({
 }: ScreenshotCarouselProps) {
   const trackRef = useRef<HTMLDivElement>(null);
 
+  function syncTrackHeight() {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const trackCenter = track.getBoundingClientRect().left + track.clientWidth / 2;
+    const slides = Array.from(
+      track.querySelectorAll<HTMLElement>('[data-slide]'),
+    );
+    const activeSlide = slides.reduce<HTMLElement | null>((closest, slide) => {
+      if (!closest) return slide;
+      const slideCenter =
+        slide.getBoundingClientRect().left + slide.offsetWidth / 2;
+      const closestCenter =
+        closest.getBoundingClientRect().left + closest.offsetWidth / 2;
+      return Math.abs(slideCenter - trackCenter) <
+        Math.abs(closestCenter - trackCenter)
+        ? slide
+        : closest;
+    }, null);
+
+    if (activeSlide) {
+      const height = `${activeSlide.offsetHeight}px`;
+      if (track.style.height !== height) track.style.height = height;
+    }
+  }
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    syncTrackHeight();
+    const observer = new ResizeObserver(syncTrackHeight);
+    observer.observe(track);
+    track
+      .querySelectorAll<HTMLElement>('[data-slide]')
+      .forEach((slide) => observer.observe(slide));
+
+    return () => observer.disconnect();
+  }, []);
+
   function scroll(direction: -1 | 1) {
     const track = trackRef.current;
     if (!track) return;
@@ -33,7 +73,8 @@ export default function ScreenshotCarousel({
     <div className="relative">
       <div
         aria-label={labels.screenshots}
-        className="screenshot-track flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-smooth"
+        className="screenshot-track flex snap-x snap-mandatory items-start gap-3 overflow-x-auto scroll-smooth"
+        onScroll={syncTrackHeight}
         ref={trackRef}
       >
         {images.map((image, index) => (
@@ -44,8 +85,9 @@ export default function ScreenshotCarousel({
           >
             <img
               alt={`${alt} — ${labels.screen} ${index + 1}`}
-              className="aspect-[16/10] w-full object-cover"
+              className="h-auto w-full object-contain"
               loading="lazy"
+              onLoad={syncTrackHeight}
               src={image}
             />
           </figure>

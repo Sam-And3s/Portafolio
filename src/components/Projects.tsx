@@ -61,12 +61,12 @@ export default function Projects({ language, content }: ProjectsProps) {
           <p className="max-w-sm leading-7 text-muted">{content.description}</p>
         </div>
 
-        <div className="mt-10 grid gap-5 sm:mt-14 lg:grid-cols-3">
+        <div className="mt-10 flex flex-wrap justify-center gap-5 sm:mt-14">
           {projects.map((project, index) => {
             const copy = project.content[language];
             return (
               <article
-                className="project-card group flex min-w-0 flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white"
+                className="project-card group flex w-full min-w-0 flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white md:basis-[calc((100%_-_1.25rem)_/_2)] lg:basis-[calc((100%_-_2.5rem)_/_3)]"
                 key={project.id}
               >
                 <button
